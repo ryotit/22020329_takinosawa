@@ -88,7 +88,7 @@
         function pop_22020329__2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Path'] !== null ? '<img src="images/' + String(feature.properties['Path']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Path'] !== null ? '<img src="images/' + String(feature.properties['Path']).replace(/[\\\/:]/g, '_').trim() + '"alt="写真" width="480" height="270">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
